@@ -30,12 +30,12 @@ function reverseString(data){
 }
 
 // Ejercicio 3
-// Evento clic para obtener los días restantes
+var button_missing_days = document.getElementById("missingDays");
 button_missing_days.onclick = function () {
     var arequipa_day = new Date(2023, 8, 15);
     var today = new Date();
     var dif1 = arequipa_day - today;
-    var result = parseInt(dif1 / MS_PER_DAY);
+    var result = parseInt(dif1 / (1000 * 3600 * 24));
     var result_paragraph = document.getElementById("result_arequipa_day");
     result_paragraph.textContent = "Faltan " + result + " días.";
 };
