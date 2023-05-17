@@ -39,3 +39,14 @@ button_missing_days.onclick = function () {
     var result_paragraph = document.getElementById("result_arequipa_day");
     result_paragraph.textContent = "Faltan " + result + " días.";
 };
+
+// Ejercicio 4
+
+var button_meet = document.getElementById("getMeet");
+button_meet.onclick = function (){
+    var value = document.getElementById("meetString").value;
+    //replace(<key>,<new value>) -> replace the key with the new value
+    var result = value.replace(/-/, '');  
+    document.getElementById("resultMeet").textContent = result;
+    console.log(value);
+}
