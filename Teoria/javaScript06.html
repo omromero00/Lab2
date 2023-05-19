@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function miFunction(){
+            document.getElementById("demo3").innerHTML = "Texto Cambiado";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript puede modificar un estilo en los elementos</h1>
+    <p id="demo">Este estilo se modificara</p>
+    <button type="button" 
+    onclick="document.getElementById('demo').style.fontSize = '35px'">
+    hacer click para cambiar el estilo</button>;
+    
+    <h1>JavaScript puede esconder elemntos HTML</h1>
+    <p id = "demo1">Este elemento se escondera</p>
+    <button type="button" onclick = "document.getElementById('demo1').style.display='none'">
+    hacer click para ocultar</button>
+
+    <h1>JavaScript puede mostrar elementos</h1>
+    <p id="demo2" style="display:none">Hola JavaScript!!</p>
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">
+    haz click aqui</button>
+
+    <h1>JavaScript trabajando con funciones desde la cabecera</h1>
+    <p id="demo3">Un parrafo Simple</p>
+    <button type="button" onclick="miFunction()"> Click para cambiar</button>
+
+</body>
+</html>
